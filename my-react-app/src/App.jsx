@@ -1,25 +1,14 @@
-import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Components/Layout/Layout";
-import AllTrending from "./Components/AllTrending/AllTrending";
-import Movies from "./Components/Movies/Movies";
-import Tv from "./Components/Tv/Tv";
-import People from "./Components/People/People";
-import NotFound from "./Components/NotFound/NotFound";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './Components/Layout/Layout';
+import AllTrending from './Components/AllTrending/AllTrending';
+import Movies from './Components/Movies/Movies';
+import Tv from './Components/Tv/Tv';
+import People from './Components/People/People';
+import NotFound from './Components/NotFound/NotFound';
 
 export default function App() {
-  // let routers = createBrowserRouter([
-  //   {path:'/', element:<Layout />, children:[
-  //     {index: true, element: <AllTrending />},
-  //     {path: 'movies', element: <Movies />},
-  //     {path: 'tv', element: <Tv />},
-  //     {path: 'people', element: <People />},
-  //     {path: '*', element: <NotFound />},
-  //   ]},
-  // ]);
-
   return (
-    <HashRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<AllTrending />} />
@@ -29,6 +18,6 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </Router>
   );
 }
