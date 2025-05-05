@@ -6,7 +6,6 @@ export default function AllTrending() {
   
 
     let {trendingData} = useRoute("all")
-   console.log(trendingData);
    
   return <>
   <div className='main'>  <h1 className='text-center p-5  mt-5    '>All Trending </h1>
