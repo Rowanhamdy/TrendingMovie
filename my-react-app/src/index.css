@@ -1,0 +1,61 @@
+
+h1{
+  position: relative;
+}
+
+h1::after{
+  content: "";
+  position: absolute;
+  right: 45%;
+  top: 75%;
+  background-color: red;
+  height: 1px;
+  width: 150px;
+}
+h1::before{
+  content: "";
+  position: absolute;
+  right: 48%;
+  top: 82%;
+  background-color: red;
+  height: 1px;
+  width: 40px;
+}
+.main{
+  position: relative;
+}
+.main::after{
+  content: "";
+  position: absolute;
+  right: 46%;
+  top: 79%;
+  background-color: red;
+  height: 1px;
+  width: 100px;
+}
+.card{
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.card:hover{
+  transform: scale(1.1);
+  margin-bottom: 15px;
+  
+}
+
+ul li i {
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+ul li i:hover {
+  transform: scale(1.2); 
+  color: #007bff;
+}
+.footer {
+  position: relative; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+}
