@@ -6,7 +6,7 @@ TrendingMovie is a React-based application that allows users to view and explore
 [Click here to visit TrendingMovie](https://rowanhamdy.github.io/TrendingMovie/)
 
 📂 **Repositories**  
-- [GitHub Repository (Frontend)](https://github.com/Rowanhamdy/TrendingMovies)
+- [GitHub Repository (Frontend)](https://github.com/Rowanhamdy/TrendingMovie)
 
 ## 📑 Features
 
